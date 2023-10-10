@@ -1,0 +1,368 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: 'Gabarito', cursive;
+    font-size: 2.1rem;
+    font-weight: 800;
+    color: rgb(94, 95, 107);
+}
+
+h1.dark-mode {
+    color: #fff;
+}
+
+h1.p3 {
+    font-size: 2.4rem;
+    color: #fff;
+}
+
+p {
+    font-family: 'Onest', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: rgb(99, 103, 109);
+}
+
+p.dark-mode {
+    color: #ffffffd3;
+    font-weight: 200;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: rgb(191, 195, 204);
+    margin: 1.5rem 0;
+}
+
+hr.pl {
+    height: 4px;
+    background-color: rgb(255, 255, 255);
+}
+
+div.dark-mode {
+    background-color: #161324;
+}
+
+div.pl {
+    background-image: linear-gradient(to bottom right, #5effcf 20%, #69f5ff 40%, #6a62e4 100%)
+}
+
+/* Part 1 Start */
+.p1-main {
+    margin: auto;
+    padding: 0 10%;
+}
+
+.editor-window {
+    background-color: #2a283a;
+    border-radius: 1.75rem;
+}
+
+.editor-window code {
+    padding: 0.75rem;
+}
+
+pre.code {
+    margin: 0 3rem;
+    font-size: 1.1rem;
+    color: rgba(224, 224, 255, 0.87);
+}
+
+.comment {
+    opacity: 40%;
+    color: #c3c4ff
+}
+
+.preprocessor {
+    color: #d089e2
+}
+
+.dependency {
+    color: #7aebc9;
+}
+
+.dt {
+    color: #c57fff;
+}
+
+.namespace {
+    color: #ffc75f;
+}
+
+.func {
+    color: #91ddfc;
+}
+
+.func-sig {
+    color: #6faeff;
+}
+
+.string-lit {
+    color: #b1ff9e;
+}
+
+.constant {
+    color: #6faeff;
+}
+
+.num-lit {
+    color: #ff7a45
+}
+/* Part 1 End */
+
+/* Part 2 Start */
+.p2-main {
+    margin: auto;
+    padding: 0 10%;
+    max-width: 900px;
+    /* align-self: center; */
+}
+
+.p2-main .music-banner {
+    margin: 2rem 0 1rem 0;
+    position: relative;
+    display: inline-block;
+    width: 100%
+}
+
+.p2-main .music-banner img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: 50% 70%;
+    border-radius: 2rem;
+    filter: brightness(50%);
+}
+
+.p2-main .music-banner .pre-title {
+    font-family: 'Gabarito', sans-serif;
+    font-weight: 800;
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    letter-spacing: clamp(0.1rem, 0.6vw, 0.3rem);
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -230%);
+    color: #fff;
+}
+
+.p2-main .music-banner .title {
+    font-family: 'Gabarito', sans-serif;
+    font-weight: 900;
+    letter-spacing: clamp(0.4rem, 2vw, 1.25rem);
+    font-size: clamp(4rem, 9.5vw, 6rem); /*9.5vw*/
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    color: #fff;
+}
+
+.album-name {
+    font-family: 'Gabarito', cursive;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: rgb(105, 109, 119);
+    
+    margin-left: 0.5rem;
+}
+
+.album-artist {
+    font-family: 'Onest', sans-serif;
+    font-weight: 300;
+    margin-left: 0.2rem;
+    color: rgb(87, 89, 95);
+}
+
+.desc-card {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0 2rem 0.5rem;
+}
+
+.album-cover {
+    object-fit: cover;
+    width: 30%;
+    flex-shrink: 0;
+    max-width: 250px;
+    
+    float: left;
+    border-radius: 12%;
+    box-shadow: 0 5px 15px #8c8fac;
+    margin-right: 2rem;
+    
+    transition: all ease 1s;
+}
+
+.album-cover:hover {
+    box-shadow: 0 10px 15px #676b88;
+    transform: translate(0, -2%);
+}
+
+.desc-section {
+    margin: 10px;
+}
+
+.desc-section .section-title {
+    font-family: 'Onest', sans-serif;
+    font-weight: 700;
+    font-size: 1.15rem;
+    color: rgb(80, 83, 92);
+}
+
+.desc-section .section-content {
+    font-family: 'Onest', sans-serif;
+    font-weight: 200;
+    font-size: 1.15rem;
+    color: rgb(81, 83, 90);
+}
+
+.desc-section .review .section-content {
+    margin-top: 0;
+}
+/* Part 2 End */
+
+
+/* Part 3 Start */
+.p3-main {
+    margin: auto;
+    padding: 0 10%;
+}
+
+.pl-table-wrapper {
+    max-width: 900px;
+    margin: auto;
+}
+
+.pl-table {
+    width: 90%;
+    margin: auto;
+    border-collapse: collapse;
+    box-shadow: 0 0 20px rgb(76, 65, 116);
+    border: 1px solid #fff;
+}
+
+.pl-header {
+    display: flex;
+    padding: 1rem 2rem 2.5rem 2rem;
+    align-items: center;
+}
+
+.pl-header img {
+    width: 20%;
+    background-image: none;
+}
+
+.pl-header .text {
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+}
+
+h1.pl {
+    font-family: 'Gabarito', cursive;
+    font-size: 5rem;
+    font-weight: 900;
+    color: #452263;
+    
+    margin-top: -0.6rem;
+    margin-bottom: 0;
+}
+
+h4.pl {
+    font-family: 'Gabarito', cursive;
+    font-size: 1.75rem;
+    font-weight: 800;
+    color: #5a3977;
+    
+    margin-bottom: 0;
+}
+
+.pl-table th {
+    font-family: 'Onest', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    padding: 0.7rem 0;
+    
+    color: #ffffffce;
+    border-bottom: 0.1em solid #ffffff2f;
+}
+
+.pl-table td {
+    font-family: 'Gabarito', cursive;
+    font-weight: 500;
+    font-size: 1.2rem;
+    padding: 1.2rem 0;
+    color: #fff;
+}
+
+.pl-table tr th:nth-child(2) {
+    text-align: start;
+}
+
+.pl-table tr td:nth-child(1),
+.pl-table tr td:nth-child(3),
+.pl-table tr td:nth-child(4),
+.pl-table tr td:nth-child(5) {
+    text-align: center;
+}
+
+.pl-table tr td:nth-child(1),
+.pl-table tr td:nth-child(5) {
+    font-weight: 800;
+    font-style: italic;
+}
+
+
+.pl-table tr:nth-child(odd) {
+    background-image: linear-gradient(to right, #aa50ff, #6700bb)
+}
+
+.pl-table tr:nth-child(even) {
+    background-image: linear-gradient(to right, #a871ff, #6700bb);
+}
+
+.pl-table tr:first-child {
+    background-image: linear-gradient(to right, #8c5bff, #56b3ff);
+}
+
+.pl-table tr:nth-child(2) {
+    background-image: linear-gradient(to right, #a871ff, #f1a157 75%, #ffdb3a);
+    border-bottom: 2px solid #ffde72
+}
+
+.pl-table tr:nth-last-child(1),
+.pl-table tr:nth-last-child(2),
+.pl-table tr:nth-last-child(3) {
+    background-image: linear-gradient(to right, #410349, #69155e, #fc48c6);
+}
+
+.pl-table tr:nth-last-child(3) {
+    border-top: 2px solid #a32d80;
+}
+
+.pl-table tr:nth-child(6) {
+    border-top: 2px solid #a0b1ff;
+    border-bottom: 2px solid #cf6659;
+}
+
+.pl-table-wrapper h2 {
+    font-size: 2.5rem;
+    font-weight: 900;
+    text-align: end;
+    margin: 0 5%;
+}
+
+.pl-table-wrapper mark {
+    background-color: #371d5f;
+    font-family: 'Gabarito', cursive;
+    color: #6d99ec;
+}
+/* Part 3 End */

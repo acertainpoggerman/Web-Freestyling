@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Freestyle 1</title>
+        <meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;600;700;800;900&family=Onest:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">        
+        <link rel="stylesheet" href="style.css">
+    </head>
+    
+    <body>
+        
+        <!-- Formatting Tags Example (Code Block) Start -->
+        <div class="p1-main dark-mode">
+            
+            <br><br><br>
+            
+            <center>
+                <h1 class="dark-mode">Formatting Example (+ Span & Div)</h1>
+            </center>
+            
+            <hr>
+            
+            <p class="dark-mode">
+                We will be using different formatting types to display some 'C++ Code'
+                in this webpage. We will use the <b>&lt;code></b> and <b>&lt;pre></b> tag to display 
+                monospaced typing with unformatted whitespaces while using the <b>&lt;span></b> tag 
+                to perform syntax highlighting. To create a Text Window effect, we will use containers 
+                with the <b>&lt;div></b> tag and a 'little' bit of CSS styling.
+                
+                <br><br>
+                
+                Let us start with a simple <b>Hello World</b> program:
+                <br><br>
+                <u><i>hello-world.cpp</i></u>
+                
+                
+            </p>
+            
+            <!-- First Editor Window Start -->
+            <div class="editor-window">
+                <code>
+                    <pre class="code">
+                        
+<span class="comment">// The Greatest Program of All Time: Hello World</span>                
+<span class="preprocessor">#include</span> <span class="dependency">&lt;iostream></span>
+<span class="func">using</span> <span class="func-arg">namespace</span> <span class="namespace">std</span>;
+
+<span class="dt">int</span> <span class="func-sig">main</span>() {
+    <span class="func">cout</span> << <span class="string-lit">"Hello World!"</span> << <span class="constant">endl</span>;
+    <span class="func">return</span> <span class="num-lit">0</span>;
+}
+                    </pre>
+                </code>
+            </div>
+            <!-- First Editor Window End -->
+            
+            <p class="dark-mode">
+                <br>
+                We could also make a <b>Simple Counter</b> program using a loop:
+                <br><br>
+                <u><i>loop-counter.cpp</i></u>
+            </p>
+            
+            <!-- Second Editor Window Start -->
+            <div class="editor-window">
+                <code>
+                    <pre class="code">
+
+<span class="comment">// Simple Counter to a Limit</span>
+<span class="preprocessor">#include</span> <span class="dependency">&lt;iostream></iostream></span>
+<span class="func">using</span> <span class="func-arg">namespace</span> <span class="namespace">std</span>;
+
+<span class="dt">int</span> <span class="func-sig">main</span>() {
+    
+    <span class="dt">int</span> limit = <span class="num-lit">10</span>;
+    <span class="func">cout</span> << <span class="string-lit">"From 1 to "</span> << limit << <span class="string-lit">": "</span>;
+    <span class="func">for</span> (<span class="dt">int</span> i; i < limit; i++) {
+        <span class="func">cout</span> << i + <span class="num-lit">1</span> << <span class="string-lit">" "</span>;
+    } 
+    <span class="func">return</span> <span class="num-lit">0</span>;
+}
+                    </pre>
+                </code>
+            </div>
+            <!-- Second Editor Window End -->
+            
+            <br><br><br>
+            
+        </div>
+        <!-- Formatting Tags Example (Code Block) End -->
+        
+        <br><br>
+        
+        <!-- Image & List Example (All About Music) Start -->
+        <div class="p2-main">
+            <center>
+                <h1>Image & List Example (+ Span & Div)</h1>
+            </center>
+            
+            <hr>
+            
+            <div class="music-banner">
+                <img 
+                src="images/all-about-music-banner.jpg" 
+                alt="All About Music Banner" 
+                >
+                <span class="pre-title">ALL ABOUT</span>
+                <span class="title">MUSIC</span>
+            </div>
+            
+            <p class="intro-paragraph">
+                I have always been a fan of music, especially from the pop and rap genre. Here
+                is a list of some of my Favourite Albums, EPs and Soundtracks from various 
+                artists in both genres:
+            </p>
+            
+            <ul>
+                <li>
+                    <span class="album-name">Melt (Deluxe)</span>
+                    <span class="album-artist">by SHAED</span>
+                    
+                    <!-- Description Card Start -->
+                    <div class="desc-card">
+                        <img src="images/melt.jpg" alt="Melt (Deluxe)" class="album-cover">
+                        
+                        <!-- Description Section Start -->
+                        <div class="desc-section">
+                            <!-- Favourite Song Start -->
+                            <span class="section-title">Favourite Song:</span>
+                            <span class="section-content">Trampoline (feat. ZAYN)</span>
+                            <!-- Favourite Song End -->
+                            
+                            <br><br>
+                            
+                            <!-- Review Start -->
+                            <div class="review">
+                                <span class="section-title">Review:</span>
+                                <p class="section-content">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Proin sit amet quam ex. Orci varius natoque penatibus et magnis dis parturient montes,
+                                    nascetur ridiculus mus. Integer elementum nisi at diam sollicitudin volutpat.
+                                    Nulla consectetur aliquam metus. Nunc nisi massa, pharetra iaculis finibus vitae,
+                                    semper ut leo. Nullam pharetra quis leo.
+                                </p>
+                            </div>
+                            <!-- Review End -->
+                        </div>
+                        <!-- Description Section End -->
+                        
+                    </div>
+                    <!-- Description Card End -->
+                </li>
+                <li>
+                    <span class="album-name">Death Race For Love</span>
+                    <span class="album-artist">by Juice WRLD</span>
+                    
+                    <!-- Description Card Start -->
+                    <div class="desc-card">
+                        <img src="images/death-race-for-love.jpg" alt="Death Race For Love" class="album-cover">
+                        
+                        <!-- Description Section Start -->
+                        <div class="desc-section">
+                            <!-- Favourite Song Start -->
+                            <span class="section-title">Favourite Song:</span>
+                            <span class="section-content">Flaws & Sins</span>
+                            <!-- Favourite Song End -->
+                            
+                            <br><br>
+                            
+                            <!-- Review Start -->
+                            <div class="review">
+                                <span class="section-title">Review:</span>
+                                <p class="section-content">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Proin sit amet quam ex. Orci varius natoque penatibus et magnis dis parturient montes,
+                                    nascetur ridiculus mus. Integer elementum nisi at diam sollicitudin volutpat.
+                                    Nulla consectetur aliquam metus. Nunc nisi massa, pharetra iaculis finibus vitae,
+                                    semper ut leo. Nullam pharetra quis leo.
+                                </p>
+                            </div>
+                            <!-- Review End -->
+                        </div>
+                        <!-- Description Section End -->
+                        
+                    </div>
+                    <!-- Description Card End -->
+                </li>
+                <li>
+                    <span class="album-name">The Off Season</span>
+                    <span class="album-artist">by J. Cole</span>
+                    
+                    <!-- Description Card Start -->
+                    <div class="desc-card">
+                        <img src="images/the-off-season.jpg" alt="The Off Season" class="album-cover">
+                        
+                        <!-- Description Section Start -->
+                        <div class="desc-section">
+                            <!-- Favourite Song Start -->
+                            <span class="section-title">Favourite Song:</span>
+                            <span class="section-content">a m a r i</span>
+                            <!-- Favourite Song End -->
+                            
+                            <br><br>
+                            
+                            <!-- Review Start -->
+                            <div class="review">
+                                <span class="section-title">Review:</span>
+                                <p class="section-content">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Proin sit amet quam ex. Orci varius natoque penatibus et magnis dis parturient montes,
+                                    nascetur ridiculus mus. Integer elementum nisi at diam sollicitudin volutpat.
+                                    Nulla consectetur aliquam metus. Nunc nisi massa, pharetra iaculis finibus vitae,
+                                    semper ut leo. Nullam pharetra quis leo.
+                                </p>
+                            </div>
+                            <!-- Review End -->
+                        </div>
+                        <!-- Description Section End -->
+                        
+                    </div>
+                    <!-- Description Card End -->
+                </li>
+                <li>
+                    <span class="album-name">Nectar</span>
+                    <span class="album-artist">by Joji</span>
+                    
+                    <!-- Description Card Start -->
+                    <div class="desc-card">
+                        <img src="images/nectar.jpg" alt="Nectar" class="album-cover">
+                        
+                        <!-- Description Section Start -->
+                        <div class="desc-section">
+                            <!-- Favourite Song Start -->
+                            <span class="section-title">Favourite Song:</span>
+                            <span class="section-content">MODUS</span>
+                            <!-- Favourite Song End -->
+                            
+                            <br><br>
+                            
+                            <!-- Review Start -->
+                            <div class="review">
+                                <span class="section-title">Review:</span>
+                                <p class="section-content">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Proin sit amet quam ex. Orci varius natoque penatibus et magnis dis parturient montes,
+                                    nascetur ridiculus mus. Integer elementum nisi at diam sollicitudin volutpat.
+                                    Nulla consectetur aliquam metus. Nunc nisi massa, pharetra iaculis finibus vitae,
+                                    semper ut leo. Nullam pharetra quis leo.
+                                </p>
+                            </div>
+                            <!-- Review End -->
+                        </div>
+                        <!-- Description Section End -->
+                        
+                    </div>
+                    <!-- Description Card End -->
+                </li>
+                <li>
+                    <span class="album-name">Stoney (Deluxe)</span>
+                    <span class="album-artist">by Post Malone</span>
+                    
+                    <!-- Description Card Start -->
+                    <div class="desc-card">
+                        <img src="images/stoney.jpg" alt="Stoney (Deluxe)" class="album-cover">
+                        
+                        <!-- Description Section Start -->
+                        <div class="desc-section">
+                            <!-- Favourite Song Start -->
+                            <span class="section-title">Favourite Song:</span>
+                            <span class="section-content">I Fall Apart</span>
+                            <!-- Favourite Song End -->
+                            
+                            <br><br>
+                            
+                            <!-- Review Start -->
+                            <div class="review">
+                                <span class="section-title">Review:</span>
+                                <p class="section-content">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Proin sit amet quam ex. Orci varius natoque penatibus et magnis dis parturient montes,
+                                    nascetur ridiculus mus. Integer elementum nisi at diam sollicitudin volutpat.
+                                    Nulla consectetur aliquam metus. Nunc nisi massa, pharetra iaculis finibus vitae,
+                                    semper ut leo. Nullam pharetra quis leo.
+                                </p>
+                            </div>
+                            <!-- Review End -->
+                        </div>
+                        <!-- Description Section End -->
+                        
+                    </div>
+                    <!-- Description Card End -->
+                </li>
+                <li>
+                    <span class="album-name">Process</span>
+                    <span class="album-artist">by Sampha</span>
+                    
+                    <!-- Description Card Start -->
+                    <div class="desc-card">
+                        <img src="images/process.jpg" alt="Process" class="album-cover">
+                        
+                        <!-- Description Section Start -->
+                        <div class="desc-section">
+                            <!-- Favourite Song Start -->
+                            <span class="section-title">Favourite Song:</span>
+                            <span class="section-content">Blood On Me</span>
+                            <!-- Favourite Song End -->
+                            
+                            <br><br>
+                            
+                            <!-- Review Start -->
+                            <div class="review">
+                                <span class="section-title">Review:</span>
+                                <p class="section-content">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Proin sit amet quam ex. Orci varius natoque penatibus et magnis dis parturient montes,
+                                    nascetur ridiculus mus. Integer elementum nisi at diam sollicitudin volutpat.
+                                    Nulla consectetur aliquam metus. Nunc nisi massa, pharetra iaculis finibus vitae,
+                                    semper ut leo. Nullam pharetra quis leo.
+                                </p>
+                            </div>
+                            <!-- Review End -->
+                        </div>
+                        <!-- Description Section End -->
+                        
+                    </div>
+                    <!-- Description Card End -->
+                </li>
+                <li>
+                    <span class="album-name">Spider-Man: Into the Spider-Verse (Soundtrack)</span>
+                    <span class="album-artist">by Various Artists</span>
+                    
+                    <!-- Description Card Start -->
+                    <div class="desc-card">
+                        <img src="images/spiderman-into-the-spiderverse.jpg" alt="Spider-Man: Into the Spider-Verse (Soundtrack)" class="album-cover">
+                        
+                        <!-- Description Section Start -->
+                        <div class="desc-section">
+                            <!-- Favourite Song Start -->
+                            <span class="section-title">Favourite Song:</span>
+                            <span class="section-content">What's Up Danger (feat. Black Caviar)</span>
+                            <!-- Favourite Song End -->
+                            
+                            <br><br>
+                            
+                            <!-- Review Start -->
+                            <div class="review">
+                                <span class="section-title">Review:</span>
+                                <p class="section-content">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Proin sit amet quam ex. Orci varius natoque penatibus et magnis dis parturient montes,
+                                    nascetur ridiculus mus. Integer elementum nisi at diam sollicitudin volutpat.
+                                    Nulla consectetur aliquam metus. Nunc nisi massa, pharetra iaculis finibus vitae,
+                                    semper ut leo. Nullam pharetra quis leo.
+                                </p>
+                            </div>
+                            <!-- Review End -->
+                        </div>
+                        <!-- Description Section End -->
+                        
+                    </div>
+                    <!-- Description Card End -->
+                </li>
+                <li>
+                    <span class="album-name">Nine Track Mind</span>
+                    <span class="album-artist">by Charlie Puth</span>
+                    
+                    <!-- Description Card Start -->
+                    <div class="desc-card">
+                        <img src="images/nine-track-mind.jpg" alt="Nine Track Mind" class="album-cover">
+                        
+                        <!-- Description Section Start -->
+                        <div class="desc-section">
+                            <!-- Favourite Song Start -->
+                            <span class="section-title">Favourite Song:</span>
+                            <span class="section-content">See You Again (feat. Wiz Khalifa)</span>
+                            <!-- Favourite Song End -->
+                            
+                            <br><br>
+                            
+                            <!-- Review Start -->
+                            <div class="review">
+                                <span class="section-title">Review:</span>
+                                <p class="section-content">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Proin sit amet quam ex. Orci varius natoque penatibus et magnis dis parturient montes,
+                                    nascetur ridiculus mus. Integer elementum nisi at diam sollicitudin volutpat.
+                                    Nulla consectetur aliquam metus. Nunc nisi massa, pharetra iaculis finibus vitae,
+                                    semper ut leo. Nullam pharetra quis leo.
+                                </p>
+                            </div>
+                            <!-- Review End -->
+                        </div>
+                        <!-- Description Section End -->
+                        
+                    </div>
+                    <!-- Description Card End -->
+                </li>
+                <li>
+                    <span class="album-name">So Good</span>
+                    <span class="album-artist">by Zara Larsson</span>
+                    
+                    <!-- Description Card Start -->
+                    <div class="desc-card">
+                        <img src="images/so-good.jpg" alt="So Good" class="album-cover">
+                        
+                        <!-- Description Section Start -->
+                        <div class="desc-section">
+                            <!-- Favourite Song Start -->
+                            <span class="section-title">Favourite Song:</span>
+                            <span class="section-content">Never Forget You (feat. MNEK)</span>
+                            <!-- Favourite Song End -->
+                            
+                            <br><br>
+                            
+                            <!-- Review Start -->
+                            <div class="review">
+                                <span class="section-title">Review:</span>
+                                <p class="section-content">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Proin sit amet quam ex. Orci varius natoque penatibus et magnis dis parturient montes,
+                                    nascetur ridiculus mus. Integer elementum nisi at diam sollicitudin volutpat.
+                                    Nulla consectetur aliquam metus. Nunc nisi massa, pharetra iaculis finibus vitae,
+                                    semper ut leo. Nullam pharetra quis leo.
+                                </p>
+                            </div>
+                            <!-- Review End -->
+                        </div>
+                        <!-- Description Section End -->
+                        
+                    </div>
+                    <!-- Description Card End -->
+                </li>
+            </ul>
+        </div>
+        <!-- Image & List Example (All About Music) End -->
+        
+        <br><br>
+        
+        <!--
+            Part 2:
+            - Set Min and Max size of 'All About Music' Text
+        -->
+        
+        <!-- Part 3 (Table Example) Start -->
+        <div class="p3-main pl">
+            <br><br>
+            <center>
+                <h1 class="p3">Table Example (+ Div, Image & Formatting)</h1>
+            </center>
+            
+            <hr class="pl">
+            
+            <!-- Premier League Table Start -->
+            <div class="pl-table-wrapper">
+                <table class="pl-table">
+                    
+                    <thead>
+                        <div class="pl-header">
+                            <img src="images/pl-logo.png" alt="Premier League Logo">
+                            <div class="text">
+                                <h4 class="pl">Premier League</h4>
+                                <h1 class="pl">2022/23</h1>
+                            </div>
+                        </div>
+                    </thead>
+                    
+                    <tbody>
+                        <tr>
+                            <th>Pos</th>
+                            <th>Team</th>
+                            <th>Pld</th>
+                            <th>GD</th>
+                            <th>Pts</th>
+                            <!-- <th>FORM</th> -->
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Manchester City</td>
+                            <td>38</td>
+                            <td>+61</td>
+                            <td>89</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Arsenal</td>
+                            <td>38</td>
+                            <td>+45</td>
+                            <td>84</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Manchester United</td>
+                            <td>38</td>
+                            <td>+15</td>
+                            <td>75</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Newcastle United</td>
+                            <td>38</td>
+                            <td>+35</td>
+                            <td>71</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Liverpool</td>
+                            <td>38</td>
+                            <td>+28</td>
+                            <td>67</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Brighton & Hove Albion</td>
+                            <td>38</td>
+                            <td>+19</td>
+                            <td>62</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>Aston Villa</td>
+                            <td>38</td>
+                            <td>+5</td>
+                            <td>61</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>Tottenham Hotspur</td>
+                            <td>38</td>
+                            <td>+7</td>
+                            <td>60</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>Brentford</td>
+                            <td>38</td>
+                            <td>+12</td>
+                            <td>59</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>Fulham</td>
+                            <td>38</td>
+                            <td>+2</td>
+                            <td>52</td>
+                        </tr>
+                        <tr>
+                            <td>18</td>
+                            <td>Leicester City</td>
+                            <td>38</td>
+                            <td>-17</td>
+                            <td>34</td>
+                        </tr>
+                        <tr>
+                            <td>19</td>
+                            <td>Leeds United</td>
+                            <td>38</td>
+                            <td>-30</td>
+                            <td>31</td>
+                        </tr>
+                        <tr>
+                            <td>20</td>
+                            <td>Southampton</td>
+                            <td>38</td>
+                            <td>-37</td>
+                            <td>25</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <br><br>
+                
+                <h2>
+                    <mark> #PL </mark>
+                </h2>
+
+            </div>
+            <!-- Premier League Table End -->
+            
+            <br>
+            
+            
+            <br><br><br><br>
+            
+        </div>
+        <!-- Part 3 (Table Example) End -->
+    </body>
+</html>
